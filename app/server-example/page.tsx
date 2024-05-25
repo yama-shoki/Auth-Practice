@@ -12,7 +12,7 @@ export default async function Page() {
         <CustomLink href="https://nextjs.org/docs/app/building-your-application/rendering/server-components">
           React Server Component
         </CustomLink>
-        のServerComponentとして表示されています。
+        のServerComponentとして表示しています。
         <CustomLink href="https://nextjs.authjs.dev#auth">
           <code>auth()</code>
         </CustomLink>
