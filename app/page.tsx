@@ -1,5 +1,6 @@
 import { auth } from "@/auth";
 import CustomLink from "@/components/custom-link";
+import Link from "next/link";
 
 export default async function Home() {
   const session = await auth();
@@ -15,7 +16,11 @@ export default async function Home() {
         <CustomLink href="/client-example" className="underline">
           クライアント
         </CustomLink>
-        の例を見て、ページを保護してセッションデータを取得する方法を確認してください。
+        の2通りの方法で認証のデモを作成しています。サインイン時のみ、{" "}
+        <Link href="/protected-page" className="underline">
+          protectedページ
+        </Link>
+        を見ることができます。
       </div>
       <div className="flex flex-col rounded-md bg-neutral-100">
         <div className="p-4 font-bold rounded-t-md bg-neutral-200">

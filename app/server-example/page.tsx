@@ -16,7 +16,7 @@ export default async function Page() {
         <CustomLink href="https://nextjs.authjs.dev#auth">
           <code>auth()</code>
         </CustomLink>
-        メソッドを利用してsessionを取得しています。
+        メソッドを利用してサーバー側でsessionを取得しています。
       </p>
       <SessionData session={session} />
     </div>
